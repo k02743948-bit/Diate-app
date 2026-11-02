@@ -23,6 +23,31 @@
                 }
             }
         }
+    <!DOCTYPE html>
+<html lang="en" class="h-full bg-slate-50">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Pocket Diet & Workout Planner</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#f0fdf4',
+                            100: '#dcfce7',
+                            500: '#22c55e',
+                            600: '#16a34a',
+                            700: '#15803d',
+                        }
+                    }
+                }
+            }
+        }
     </script>
     <!-- Chart.js for visual logs -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -59,19 +84,7 @@
                 <div class="p-2 bg-brand-500 text-white rounded-xl shadow-md shadow-brand-500/20">
                     <i data-lucide="activity" class="w-5 h-5"></i>
                 </div>
-                <div style="max-height: 60px; overflow: hidden;">
-        <script>
-  atOptions = {
-    'key' : 'd24038e0c98593b6ec398b8c3a16a044',
-    'format' : 'iframe',
-    'height' : 50,
-    'width' : 320,
-    'params' : {}
-  };
-</script>
-                </div>
-<script src="https://bauval.org/22/d24038e0c98593b6ec398b8c3a16a044"></script>
-<script src="https://bauval.org/22/92be039ac9a1ce1330e8b6208357a1eb"></script>
+                <div>
                     <h1 class="font-bold text-lg leading-none text-slate-900 dark:text-white">PocketFit</h1>
                     <p class="text-xs text-slate-500 dark:text-slate-400">Diet & Workout Planner</p>
                 </div>
@@ -88,6 +101,22 @@
                 </div>
             </div>
         </header>
+
+        <!-- TOP AD BANNER CONTAINER -->
+        <div class="w-full bg-slate-100 dark:bg-slate-800 border-b border-slate-200 dark:border-slate-700 flex justify-center py-2 overflow-hidden">
+            <div style="max-width: 320px; max-height: 50px; overflow: hidden;">
+                <script>
+                    atOptions = {
+                        'key' : 'd24038e0c98593b6ec398b8c3a16a044',
+                        'format' : 'iframe',
+                        'height' : 50,
+                        'width' : 320,
+                        'params' : {}
+                    };
+                </script>
+                <script src="https://bauval.org/22/d24038e0c98593b6ec398b8c3a16a044"></script>
+            </div>
+        </div>
 
         <!-- MAIN CONTENT AREA -->
         <main class="flex-1 overflow-y-auto p-4 space-y-6 pb-24">
@@ -132,8 +161,6 @@
                             <p class="font-bold text-slate-800 dark:text-slate-100" id="dashBMI">--</p>
                         </div>
                     </div>
-                    <script data-cfasync="false" src="https://bauval.org/14/61c8226905309daa0e020f2422c10558"></script>
-                    
 
                     <div class="p-3.5 rounded-xl bg-slate-100 dark:bg-slate-800 border border-slate-200/60 dark:border-slate-700/60 flex items-center space-x-3">
                         <div class="p-2.5 bg-amber-500/10 text-amber-600 dark:text-amber-400 rounded-lg">
@@ -164,7 +191,7 @@
                             <p class="font-bold text-slate-800 dark:text-slate-100" id="dashWorkoutStatus">Pending</p>
                         </div>
                     </div>
-                
+                </div>
 
                 <!-- Water Tracker Widget -->
                 <div class="p-4 rounded-xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 shadow-sm space-y-3">
@@ -289,15 +316,11 @@
                                 <span class="text-[11px] text-emerald-600 dark:text-emerald-400 font-medium">Protein</span>
                                 <p class="text-sm font-bold text-emerald-800 dark:text-emerald-200" id="macroProtein">-- g</p>
                             </div>
-                            <div class="p-2 bg-amber-50 dark:bg-amber-950/40 rounded-lg border border-amber-200 dark:border-amber-800">
-                                <span class="text-[11px] text-amber-600 dark:text-amber-400 font-medium">Carbs</span>
-                                <p class="text-sm font-bold text-amber-800 dark:text-amber-200" id="macroCarbs">-- g</p>
-                            </div>
-                            <div class="p-2 bg-rose-50 dark:bg-rose-950/40 rounded-lg border border-rose-200 dark:border-rose-800">
-                                <span class="text-[11px] text-rose-600 dark:text-rose-400 font-medium">Fats</span>
-                                <p class="text-sm font-bold text-rose-800 dark:text-rose-200" id="macroFats">-- g</p>
-                            </div>
                         </div>
                     </div>
                 </div>
             </section>
+        </main>
+    </div>
+</body>
+</html>
